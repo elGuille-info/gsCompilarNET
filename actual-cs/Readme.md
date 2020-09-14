@@ -6,7 +6,7 @@ En realidad después de convertirlo a VB lo he mejorado, añadido nuevas caracte
 <br>
 <br>
 <h3>Sobre el código original de Laurent Kempé</h3>
-El código de Laurent Kempé lo vi inicialmente en:<br>
+El código de Laurent Kempé lo vi inicialmente (el 2 de septiembre) en:<br>
 https://laurentkempe.com/2019/02/18/dynamically-compile-and-run-code-using-dotNET-Core-3.0/<br>
 Y tiene el proyecto en GitHub:<br>
 https://github.com/laurentkempe/DynamicRun<br>
