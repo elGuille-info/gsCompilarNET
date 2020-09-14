@@ -26,9 +26,12 @@ gsCompilarEjecutarNET v1.0.0.5 para .NET 5.0 Preview 8.<br>
 Y en varias aplicaciones de prueba para .NET 5.0 preview 8:<br>
 CompilarCore_App_VB y CompilarCore_App_CS (aplicaciones de consola de prueba)<br>
 <br> 
-<br> 
+<br>
+He publicado un paquete en NuGet con el código compilado (Release) por si lo quieres usar en tus proyectos de Visual Studio.<br>
+https://www.nuget.org/packages/gsCompilarNET/<br>
+<br>
 <br>
 Guillermo<br>
 <br>
-Actualizado el 14 de septiembre de 2020 a las 18:16 GMT+2
+Actualizado el 14 de septiembre de 2020 a las 19:48 GMT+2
 
