@@ -6,6 +6,10 @@ El lenguaje de código usado es Visual Basic .NET.<br>
 <br>
 <br>
 La carpeta <b>actual</b> tiene el código del proyecto actual con las modificaciones.<br>
+La carpeta <b>actual-cs</> tiene el código en C# que adapté (modifiqué) a partir del código original de Laurent Kempé<br>
+<br>
+A fecha de hoy 14 de septiembre de 2019 (18:33 GMT+2) es el mismo código que el que he convertido a Visual Basic .NET<br>
+En realidad después de convertirlo a VB lo he mejorado, añadido nuevas características, etc., y después lo he pasado al proyecto de C#.
 <br>
 <br>
 <h2>IMPORTANTE:</h2>
