@@ -170,7 +170,10 @@ namespace gsCompilarCore
             if (run) {
                 try
                 {
-                    Process.Start("dotnet", outputExe);
+                    //Process.Start("dotnet", outputExe);
+                    // Algunas veces no se ejecuta,                      (17/Sep/20)
+                    // porque el path contiene espacios.
+                    Process.Start("dotnet", $"{'\"'}{outputExe}{'\"'}");
                 }
                 catch { }
             }

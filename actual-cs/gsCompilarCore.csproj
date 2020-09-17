@@ -7,15 +7,19 @@
     <Product>gsCompilarCore</Product>
     <!-- ProductVersion>1.0.0.0</ProductVersion -->
     <Version>1.0.0.0</Version>
-    <FileVersion>1.0.0.13</FileVersion>
+    <FileVersion>1.0.0.14</FileVersion>
     <RootNamespace>gsCompilarCore</RootNamespace>
 
     <Authors>Guillermo Som (elGuille)</Authors>
     <Company>elGuille</Company>
     <Description>Biblioteca de clases (.NET Core 3.1) para compilar código de C# y VB
 Basada en código de Laurent Kempé (laurentkempe.com) y otras fuentes de la web.
-(para .NET Core 3.1 revisión del 14/Sep/2020)</Description>
+(para .NET Core 3.1 revisión del 17/Sep/2020)</Description>
     
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>
