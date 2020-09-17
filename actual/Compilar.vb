@@ -158,7 +158,11 @@ Public Class Compilar
         If run Then
 
             Try
-                Process.Start("dotnet", outputExe)
+                ' Algunas veces no se ejecuta,                      (17/Sep/20)
+                ' porque el path contiene espacios.
+                Process.Start("dotnet", $"{ChrW(34)}{outputExe}{ChrW(34)}")
+                'Process.Start("dotnet", outputExe)
+
             Catch
             End Try
         End If

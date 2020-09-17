@@ -5,16 +5,24 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
 
     <Product>gsCompilarNET</Product>
-    <Version>1.0.0.0</Version>
-    <FileVersion>1.0.0.1</FileVersion>
+    <Version>1.0.0.2</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.2</FileVersion>
 
     <Authors>Guillermo Som (elGuille)</Authors>
     <Company>elGuille</Company>
     <Description>Biblioteca de clases (.NET Core 3.1) para compilar código de C# y VB
 Basada en código en C# de Laurent Kempé (Copyright (c) 2019 Laurent Kempé) y otras fuentes de la web.
-(para .NET Core 3.1 revisión del 14/Sep/2020)
-    </Description>
-
+(para .NET Core 3.1 revisión del 17/Sep/2020)</Description>
+    <Copyright>Copyright Guillermo Som (elGuille), 2020</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>http://www.elguillemola.com/2020/09/gscompilarnet-una-biblioteca-de-clases-para-compilar-codigo-de-c-o-vb/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/elGuille-info/gsCompilarNET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>visual-basic csharp dotnet dotnet-core</PackageTags>
+    <PackageReleaseNotes>v1.0.0.2 Falla si el path de la DLL a ejecutar contiene espacios.
+El paquete de NuGet lo sincronizo con la versión revisada (FileVersion).</PackageReleaseNotes>
+    
   </PropertyGroup>
 
   <ItemGroup>
