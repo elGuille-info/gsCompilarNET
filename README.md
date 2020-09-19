@@ -31,6 +31,17 @@ He publicado un paquete en NuGet con el código compilado (Release) por si lo qu
 https://www.nuget.org/packages/gsCompilarNET/<br>
 <br>
 <br>
+<h2>Versiones</h2>
+v1.0.0.3 del 19 de septiembre de 2020<br>
+Se pueden indicar las versiones del lenguaje para compilar.<br>
+La versión predeterminada es Default. Que es la última versión soportada.<br>
+En VB Latest o Default para la última versión (16.0). En C# Latest (8.0) o Default o Preview para 9.0.<br>
+<br>
+v1.0.0.2 <br>
+Falla si el path de la DLL a ejecutar contiene espacios.<br>
+El paquete de NuGet lo sincronizo con la versión revisada (FileVersion).<br>
+<br>
+<br>
 Guillermo<br>
 <br>
 Actualizado el 19 de septiembre de 2020 a las 18:52 GMT+2
