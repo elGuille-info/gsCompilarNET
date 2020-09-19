@@ -33,5 +33,5 @@ https://www.nuget.org/packages/gsCompilarNET/<br>
 <br>
 Guillermo<br>
 <br>
-Actualizado el 14 de septiembre de 2020 a las 19:48 GMT+2
+Actualizado el 19 de septiembre de 2020 a las 18:52 GMT+2
 
