@@ -25,6 +25,28 @@ Imports System.Collections.Generic
 
 Friend Class Compiler
 
+    ' Nuevas propiedades para indicar la versión de los lenguajes   (18/Sep/20)
+    ' La versión predeterminada es Default. Que es la última versión soportada.
+    ' En VB Latest o Default para la última versión (16.0).
+    ' En C# Latest (8.0) o Default o Preview para 9.0.
+
+    ''' <summary>
+    ''' La versión a usar del compilador de C#
+    ''' </summary>
+    ''' <remarks>
+    ''' Normalmente usarás Latest (v8.0) o Preview (v9.0)
+    ''' Default también es la 9.0
+    ''' </remarks>
+    Friend Shared Property LanguageVersionCS As csc.LanguageVersion = csc.LanguageVersion.Default
+
+    ''' <summary>
+    ''' La versión a usar del compilador de VB.
+    ''' </summary>
+    ''' <remarks>
+    ''' Normalmente usarás Latest o Default (v16.0) no hay Preview
+    ''' </remarks>
+    Friend Shared Property LanguageVersionVB As vbc.LanguageVersion = vbc.LanguageVersion.Default
+
     ''' <summary>
     ''' Una colección con los fallos al compilar o nulo si no hubo error al compilar.
     ''' </summary>
@@ -227,7 +249,7 @@ Friend Class Compiler
 
     Private Function VBGenerateCode(ByVal sourceCode As String, ByVal outputExe As String) As vbc.VisualBasicCompilation
         Dim codeString = SourceText.From(sourceCode)
-        Dim options = vbc.VisualBasicParseOptions.[Default].WithLanguageVersion(vbc.LanguageVersion.Latest)
+        Dim options = vbc.VisualBasicParseOptions.[Default].WithLanguageVersion(LanguageVersionVB)
 
         Dim parsedSyntaxTree = vbc.SyntaxFactory.ParseSyntaxTree(codeString, options)
 
@@ -251,7 +273,7 @@ Friend Class Compiler
 
     Private Function CSGenerateCode(ByVal sourceCode As String, ByVal outputExe As String) As csc.CSharpCompilation
         Dim codeString = SourceText.From(sourceCode)
-        Dim options = csc.CSharpParseOptions.[Default].WithLanguageVersion(csc.LanguageVersion.Latest)
+        Dim options = csc.CSharpParseOptions.[Default].WithLanguageVersion(LanguageVersionCS)
 
         Dim parsedSyntaxTree = csc.SyntaxFactory.ParseSyntaxTree(codeString, options)
 

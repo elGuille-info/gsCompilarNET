@@ -18,8 +18,47 @@ Imports System.Diagnostics
 Imports System.IO
 Imports System.Text
 
+Imports csc = Microsoft.CodeAnalysis.CSharp
+Imports vbc = Microsoft.CodeAnalysis.VisualBasic
+
 
 Public Class Compilar
+
+    ' Nuevas propiedades para indicar la versión de los lenguajes   (18/Sep/20)
+    ' La versión predeterminada es Default. Que es la última versión soportada.
+    ' En VB Latest o Default para la última versión (16.0).
+    ' En C# Latest (8.0) o Default o Preview para 9.0.
+
+    ''' <summary>
+    ''' La versión a usar del compilador de C#
+    ''' </summary>
+    ''' <remarks>
+    ''' Normalmente usarás Latest (v8.0) o Preview (v9.0) 
+    ''' Default también es la 9.0
+    ''' </remarks>
+    Public Shared Property LanguageVersionCS As csc.LanguageVersion
+        Get
+            Return Compiler.LanguageVersionCS
+        End Get
+        Set(value As csc.LanguageVersion)
+            Compiler.LanguageVersionCS = value
+        End Set
+    End Property
+
+    ''' <summary>
+    ''' La versión a usar del compilador de VB.
+    ''' </summary>
+    ''' <remarks>
+    ''' Normalmente usarás Latest o Default (v16.0) no hay Preview
+    ''' </remarks>
+    Public Shared Property LanguageVersionVB As vbc.LanguageVersion
+        Get
+            Return Compiler.LanguageVersionVB
+        End Get
+        Set(value As vbc.LanguageVersion)
+            Compiler.LanguageVersionVB = value
+        End Set
+    End Property
 
     ''' <summary>
     ''' Una colección con los fallos al compilar o nulo si no hubo error al compilar.
