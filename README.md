@@ -32,6 +32,9 @@ https://www.nuget.org/packages/gsCompilarNET/<br>
 <br>
 <br>
 <h2>Versiones</h2>
+v1.0.0.4 del 21 de septiembre de 2020<br>
+Cambio las versiones de json para aplicaciones de WinForms a 5.0.0-rc.1.20452.2 y Consola a 5.0.0-rc.1.20451.14.<br>
+<br>
 v1.0.0.3 del 19 de septiembre de 2020<br>
 Se pueden indicar las versiones del lenguaje para compilar.<br>
 La versión predeterminada es Default. Que es la última versión soportada.<br>
@@ -44,5 +47,5 @@ El paquete de NuGet lo sincronizo con la versión revisada (FileVersion).<br>
 <br>
 Guillermo<br>
 <br>
-Actualizado el 19 de septiembre de 2020 a las 18:52 GMT+2
+Actualizado el 21 de septiembre de 2020 a las 19:08 GMT+2
 
