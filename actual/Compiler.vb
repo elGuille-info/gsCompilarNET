@@ -1,4 +1,4 @@
-﻿'------------------------------------------------------------------------------
+'------------------------------------------------------------------------------
 ' Clase para compilar código de VB y C#                             (14/Sep/20)
 '
 ' Usando Microsoft.CodeAnalysis.VisualBasic y Microsoft.CodeAnalysis.CSharp
@@ -210,8 +210,8 @@ Friend Class Compiler
         Dim j = dirCore.IndexOf($"dotnet{dirSep}shared{dirSep}")
 
         If j = -1 Then
-            mayor = "5.0.0-preview.8.20411.6"
-            dirWinDesk = "C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.0-preview.8.20411.6"
+            mayor = "5.0.0-rc.1.20452.2"
+            dirWinDesk = $"C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\{mayor}"
         Else
             j += ($"dotnet{dirSep}shared{dirSep}").Length
             dirWinDesk = Path.Combine(dirCore.Substring(0, j), "Microsoft.WindowsDesktop.App")
@@ -235,7 +235,7 @@ Friend Class Compiler
         Dim j = dirCore.IndexOf("Microsoft.NETCore.App")
 
         If j = -1 Then
-            mayor = "5.0.0-preview.8.20407.11"
+            mayor = "5.0.0-rc.1.20451.14"
         Else
             j += ("Microsoft.NETCore.App").Length
             Dim dirCoreApp = dirCore.Substring(0, j)
