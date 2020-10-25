@@ -210,7 +210,8 @@ Friend Class Compiler
         Dim j = dirCore.IndexOf($"dotnet{dirSep}shared{dirSep}")
 
         If j = -1 Then
-            mayor = "5.0.0-rc.1.20452.2"
+            'mayor = "5.0.0-rc.1.20452.2"
+            mayor = "5.0.0-rc.2.20475.6"
             dirWinDesk = $"C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\{mayor}"
         Else
             j += ($"dotnet{dirSep}shared{dirSep}").Length
@@ -235,7 +236,8 @@ Friend Class Compiler
         Dim j = dirCore.IndexOf("Microsoft.NETCore.App")
 
         If j = -1 Then
-            mayor = "5.0.0-rc.1.20451.14"
+            'mayor = "5.0.0-rc.1.20451.14"
+            mayor = "5.0.0-rc.2.20475.5"
         Else
             j += ("Microsoft.NETCore.App").Length
             Dim dirCoreApp = dirCore.Substring(0, j)

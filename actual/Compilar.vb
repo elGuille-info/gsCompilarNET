@@ -16,6 +16,9 @@
 'v1.0.0.4   21/Sep/20   Cambio las versiones de json para aplicaciones de 
 '                       WinForms a 5.0.0-rc.1.20452.2
 '                       Consola  a 5.0.0-rc.1.20451.14
+'v1.0.0.5   25/Oct/20   Cambio las versiones de json para usar .NET 5.0 RC2
+'                       WinForms: 5.0.0-rc.2.20475.6, Consola: 5.0.0-rc.2.20475.5
+'
 '
 ' (c) Guillermo (elGuille) Som, 2020
 '------------------------------------------------------------------------------
@@ -156,7 +159,7 @@ Public Class Compilar
     ''' Ejecuta (si así se indica) el ensamblado generado.
     ''' Devuelve una cadena vacía si hubo error.
     ''' </summary>
-    Public Shared Function CompilarGuardar(ByVal file As String, ByVal Optional run As Boolean = True) As String
+    Public Shared Function CompilarGuardar(file As String, Optional run As Boolean = True) As String
         Dim compiler = New Compiler()
 
         Dim outputExe = compiler.CompileAsFile(file)
@@ -174,6 +177,7 @@ Public Class Compilar
             ' Microsoft.WindowsDesktop.App
             ' 5.0.0-preview.8.20411.6
             ' 5.0.0-rc.1.20452.2
+            ' 5.0.0-rc.2.20475.6
             jsonText = "
 {
     ""runtimeOptions"": {
@@ -190,6 +194,7 @@ Public Class Compilar
             ' Microsoft.NETCore.App
             ' 5.0.0-preview.8.20407.11
             ' 5.0.0-rc.1.20451.14
+            ' 5.0.0-rc.2.20475.5
             jsonText = "
 {
     ""runtimeOptions"": {

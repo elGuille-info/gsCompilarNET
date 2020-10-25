@@ -21,7 +21,10 @@ está basado en las clases de C# Copyright (c) 2019 Laurent Kempé<br>
 <br>
 <h2>Uso de esta DLL:</h2>
 Actualmente esta biblioteca la utilizo personalmente en:<br>
-gsCompilarEjecutarNET v1.0.0.5 para .NET 5.0 Preview 8.<br>
+gsCompilarEjecutarNET v1.0.0.5 para .NET 5.0 RC2.<br>
+<b>NOTA:</b><br>
+Con fecha del 25 de octubre de 2020 la aplicación gsCompilarEjecutarNET la considero obsoloeta.<br>
+En su lugar recomiendo usar <a href="https://github.com/elGuille-info/gsEvaluarColorearCodigoNET">gsEvaluarColorearCodigoNET</a> (que no usa esta DLL, pero sí código mejorado y ampliado).<br>
 <br>
 Y en varias aplicaciones de prueba para .NET 5.0 preview 8:<br>
 CompilarCore_App_VB y CompilarCore_App_CS (aplicaciones de consola de prueba)<br>
@@ -32,6 +35,8 @@ https://www.nuget.org/packages/gsCompilarNET/<br>
 <br>
 <br>
 <h2>Versiones</h2>
+v1.0.0.5 del 25 de octubre de 2020<br>
+Cambio las versiones de json para usar .NET 5.0 RC2 (WinForms: 5.0.0-rc.2.20475.6, Consola: 5.0.0-rc.2.20475.5)
 v1.0.0.4 del 21 de septiembre de 2020<br>
 Cambio las versiones de json para aplicaciones de WinForms a 5.0.0-rc.1.20452.2 y Consola a 5.0.0-rc.1.20451.14.<br>
 <br>
@@ -47,5 +52,5 @@ El paquete de NuGet lo sincronizo con la versión revisada (FileVersion).<br>
 <br>
 Guillermo<br>
 <br>
-Actualizado el 21 de septiembre de 2020 a las 19:08 GMT+2
+Actualizado el 25 de octubre de 2020 a eso de las 14:16 GMT+1
 
